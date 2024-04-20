@@ -9,3 +9,7 @@
 4*. Если это не было сделано ранее – именно bstack_userName и bstack_accessKey считывать не из .env.bstack, а из .env.credentials или .env (соответстенно именно эти файлы должны быть в .gitignore)
 
 5*. Если это не было сделано ранее – отрефакторить реализацию config.py на использование pydantic
+
+
+
+Запуск в Browserstack: pytest -s -v --context=bstack .
