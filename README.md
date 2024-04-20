@@ -1,0 +1,1 @@
+# qa_guru_HW20_emulator
