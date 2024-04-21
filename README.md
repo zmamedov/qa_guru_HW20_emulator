@@ -13,3 +13,10 @@
 
 
 Запуск в Browserstack: pytest -s -v --context=bstack .
+
+Запуск через эмулятор:
+1. Запустить сервер appium следующей командой в коммандной строке: appium
+2. Запустить эмулятор в Android Studio
+3. Выполнить команду: pytest -s -v --context=local_emulator .
+
+Запуск на реальном устройстве: pytest -s -v --context=local_real_device .
