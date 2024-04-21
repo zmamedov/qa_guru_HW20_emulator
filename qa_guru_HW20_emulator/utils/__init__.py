@@ -1,1 +1,1 @@
-from . import file
+from . import attach, file

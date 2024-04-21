@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from selene import browser
 
 import config
+from qa_guru_HW20_emulator.utils import attach
 
 
 def pytest_addoption(parser):
@@ -39,4 +40,11 @@ def mobile_management(context):
 
     yield
 
+    attach.add_screenshot()
+    attach.add_xml()
+    session_id = browser.driver.session_id
+
     browser.quit()
+
+    if context == 'bstack':
+        attach.add_video(session_id)

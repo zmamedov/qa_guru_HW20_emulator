@@ -3,3 +3,4 @@ pytest==8.1.1
 appium-python-client==4.0.0
 python-dotenv==0.20.0
 allure-pytest==2.13.5
+requests==2.31.0
